@@ -1,0 +1,2 @@
+[internal]
+dbserver ansible_host=dbserver.bread
