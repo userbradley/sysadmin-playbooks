@@ -1,0 +1,10 @@
+---   
+   
+    - name: Install useful applications
+      apt: name ={{ item }} update_cache=yes state=latest
+      loop: ['curl', 'wget', 'vim', 'git', 'socat', 'iperf']
+      tags: [install]
+
+    - name: Install unzip because bigbrain
+      apt: name=unzip update_cache=yes state=latest
+      tags: [unzip]
