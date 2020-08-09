@@ -1,3 +1,8 @@
 [internal]
-dbserver ansible_host=dbserver.bread
-dbserver1 ansible_host=10.255.255.220
+#Place servers below
+sdatabase ansible_host=10.255.255.220
+
+
+#Making sure to use python3
+[internal:vars]
+ansible_python_interpreter=/usr/bin/python3
